@@ -1,3 +1,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.container {
+    background-color: #200D23;
+    color: #F5F5F5;
+    padding: 20px;
+    margin: 25px auto;
+    width: 90%; /* Alterado para 90% */
+    max-width: 900px; /* Largura máxima em telas maiores */
+    border-radius: 10px;
+    position: relative;
+}
