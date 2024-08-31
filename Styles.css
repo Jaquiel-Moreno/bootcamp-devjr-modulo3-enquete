@@ -1,21 +1,24 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 }
-h1{
+
+h1 {
     color: #FECD23;
     text-align: center;
 }
-.title, .sub-title{
+
+.title,
+.sub-title {
     text-align: center;
 }
+
 .container {
     background-color: rgba(48, 40, 40, 0.986);
     color: #F5F5F5;
     padding: 20px;
     margin: 25px auto;
-    width: 90%; /* Alterado para 90% */
-    max-width: 900px; /* Largura máxima em telas maiores */
+    max-width: 800px;
     border-radius: 10px;
     position: relative;
 }
@@ -24,44 +27,48 @@ h1{
     background-color: #5D1D67;
     padding: 20px;
     text-align: center;
-    width: 90%; /* 100% para ocupar toda a largura disponível */
     margin: 25px auto;
     border-radius: 10px;
+    right: 250px;
+    
 }
-.entrada-dados{
- 
+
+.entrada-dados {
     padding: 0.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: space-around;
-    text-align: center; 
-    border-radius: 4px; 
-    width:100%; /* Ocupar 50% da largura da página */
-    margin: 0 auto; /* Centralizar o elemento horizontalmente */
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 auto;
     box-sizing: border-box;
-    
-   
+
+
 
 }
-input {  
-    width: 95%;  
+
+input {
+    width: 95%;
     margin-top: 25px;
     height: 45px;
     border-radius: 10px;
-    font-size: 25px;/*tamanho da fonte*/
-    outline: none;/*Remove a sombra interna*/
-    
-}  
+    font-size: 25px;
+    outline: none;
+}
 
 .cards {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem linha se necessário */
     justify-content: space-between;
     gap: 25px;
     margin-top: 45px;
 }
-.sports-sombra, .airport-sombra, .psychology-sombra{
+
+.sports-sombra,
+.airport-sombra,
+.psychology-sombra {
     background-color: rgb(39, 55, 218);
     margin: 10px;
     padding: 10px;
@@ -70,7 +77,10 @@ input {
     row-gap: 15px;
     border-radius: 15px;
 }
-.sports, .airport, .psychology {
+
+.sports,
+.airport,
+.psychology {
 
     background-color: #4064F0;
     display: flex;
@@ -80,31 +90,56 @@ input {
     text-align: center;
     margin-top: 10px;
     flex-direction: column;
+    max-width: 100%;
 }
+
 button {
     background-color: #200D23;
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
-    width: 100%; /* Ajustado para 100% */
+    width: 100%;
+    /* Ajustado para 100% */
     padding: 0.9rem 3rem;
     font-size: 12px;
     text-align: center;
 
 }
+
 button:hover {
     background-color: red;
 }
 
-button:active {
-    background-color: #1e3278;
-}
 
-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(64, 100, 240, 0.5);
-}
 
-footer{
+footer {
     text-align: center;
+}
+
+
+@media screen and (max-width: 20px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sub-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+
+
+    }
+
+    .title,
+    .sub-title {
+        padding: 15px;
+    }
+
 }
