@@ -10,7 +10,7 @@ h1{
     text-align: center;
 }
 .container {
-    background-color: #200D23;
+    background-color: rgba(48, 40, 40, 0.986);
     color: #F5F5F5;
     padding: 20px;
     margin: 25px auto;
@@ -71,6 +71,7 @@ input {
     border-radius: 15px;
 }
 .sports, .airport, .psychology {
+
     background-color: #4064F0;
     display: flex;
     justify-content: space-between;
@@ -79,4 +80,31 @@ input {
     text-align: center;
     margin-top: 10px;
     flex-direction: column;
+}
+button {
+    background-color: #200D23;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Ajustado para 100% */
+    padding: 0.9rem 3rem;
+    font-size: 12px;
+    text-align: center;
+
+}
+button:hover {
+    background-color: red;
+}
+
+button:active {
+    background-color: #1e3278;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(64, 100, 240, 0.5);
+}
+
+footer{
+    text-align: center;
 }
