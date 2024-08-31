@@ -1,5 +1,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+h1{
+    color: #FECD23;
+    text-align: center;
+}
+.title, .sub-title{
+    text-align: center;
 }
 .container {
     background-color: #200D23;
@@ -11,6 +19,7 @@ body {
     border-radius: 10px;
     position: relative;
 }
+
 .sub-container {
     background-color: #5D1D67;
     padding: 20px;
@@ -19,11 +28,38 @@ body {
     margin: 25px auto;
     border-radius: 10px;
 }
+.entrada-dados{
+ 
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    text-align: center; 
+    border-radius: 4px; 
+    width:100%; /* Ocupar 50% da largura da página */
+    margin: 0 auto; /* Centralizar o elemento horizontalmente */
+    box-sizing: border-box;
+    
+   
+
+}
+input {  
+    width: 95%;  
+    margin-top: 25px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 25px;/*tamanho da fonte*/
+    outline: none;/*Remove a sombra interna*/
+    
+}  
+
 .cards {
     display: flex;
     flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
     justify-content: space-between;
     gap: 25px;
+    margin-top: 45px;
 }
 .sports-sombra, .airport-sombra, .psychology-sombra{
     background-color: rgb(39, 55, 218);
@@ -33,10 +69,6 @@ body {
     flex-direction: column;
     row-gap: 15px;
     border-radius: 15px;
- 
-
-
-
 }
 .sports, .airport, .psychology {
     background-color: #4064F0;
